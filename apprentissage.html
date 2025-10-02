@@ -64,6 +64,47 @@ html {
   text-decoration: underline;
 }
 
+.text-img-section {
+  padding: 40px 20px;
+}
+
+.text-img-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-img-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-img-text h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.text-img-text p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.text-img-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.text-img-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
 .site-footer {
   background: #000;
   color: #fff;
@@ -108,6 +149,8 @@ html {
 .btn-contact:hover {
   background: #a00b23;
 }
+
+
 
 /* Zone liens (colonnes 2-4) */
 .footer-links-section {
@@ -192,6 +235,18 @@ html {
   </div>
 </header>
 <!-- PLUGGIN TEXT_IMG -->
+<section class="text-img-section">
+  <div class="text-img-container">
+    <div class="text-img-text">
+      <h2>Ingénieur par l’apprentissage</h2>
+      <p>Le cycle ingénieur correspond aux trois dernières années de la formation d’ingénieur. Sous statut apprenti, ces trois années sont réalisées en apprentissage au sein d’une entreprise d’accueil.</p>
+      <p>Tout au long de cette formation, vous alternez les périodes à l’école et les périodes en entreprises en montant progressivement en compétence. Ces périodes durent environ 6 semaines lors des deux premières années, puis 6 mois la dernière année. Ces rythmes d’alternance permettent aux étudiants de travailler avec des entreprises sur tout le territoire français.</p>
+    </div>
+    <div class="text-img-image">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/11/08/shema-cycle-inge-12-1320x752.png" alt="Cycle ingénieur apprentissage">
+    </div>
+  </div>
+</section>
 
 <!-- FOOTER_SIMPLE -->
 <footer class="site-footer">
