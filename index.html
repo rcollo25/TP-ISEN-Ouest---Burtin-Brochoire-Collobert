@@ -1,11 +1,127 @@
-<!-- HEADER_SIMPLE  -->
-<header>
-  <h1>Bienvenue à l'ISEN Ouest</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Accueil</a></li>
-      <li><a href="apprentissage.html">Apprentissage</a></li>
-    </ul>
-  </nav>
-</header>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISEN Ouest</title>
+  <style>
+    /* ----- HEADER ----- */
+    header {
+      background-color: #c8102e;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
 
+    header h1 {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* ----- FOOTER ----- */
+    .site-footer {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer-col-logo {
+      flex: 1;
+      min-width: 220px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-bottom: 15px;
+      margin-top: 30px;
+    }
+
+    .footer-links-section {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-cities {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 15px;
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- HEADER_SIMPLE -->
+  <header>
+    <h1>Bienvenue à l'ISEN Ouest</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apprentissage.html">Apprentissage</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenu principal -->
+  <main>
+    <h2>Contenu de la page</h2>
+    <p>Texte d’exemple...</p>
+  </main>
+
+  <!-- FOOTER_SIMPLE -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
+             alt="ISEN Ouest" class="footer-logo">
+      </div>
+      <div class="footer-links-section">
+        <p class="footer-cities">Texte à venir</p>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    &copy; ISEN Ouest - 2025
+  </div>
+
+</body>
+</html>
