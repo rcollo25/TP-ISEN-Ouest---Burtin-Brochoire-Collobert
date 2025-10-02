@@ -35,6 +35,24 @@
     nav a:hover {
       text-decoration: underline;
     }
+    .images-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+   .images-container img {
+     width: 200px;
+     height: auto;
+     border-radius: 10px;
+     transition: transform 0.3s;
+    }
+
+   .images-container img:hover {
+     transform: scale(1.05);
+    }
+
 
     /* ----- FOOTER ----- */
     .site-footer {
@@ -101,10 +119,22 @@
     </nav>
   </header>
 
-  <!-- Contenu principal -->
   <main>
-    <h2>Contenu de la page</h2>
-    <p>Texte d’exemple...</p>
+  <!-- PLUGGIN IMAGES -->
+  <section class="formations-images">
+    <h2>Nos formations ingénieurs</h2>
+    <div class="images-container">
+      <a href="https://isen-ouest.fr/" target="_blank">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
+      </a>
+      <a href="https://isen-ouest.fr/" target="_blank">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel">
+      </a>
+         <a href="https://isen-ouest.fr/" target="_blank">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle">
+        </a>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER_SIMPLE -->
