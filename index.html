@@ -6,16 +6,64 @@
   <title>ISEN Ouest</title>
   <style>
     /* ----- HEADER ----- */
-    header {
-      background-color: #c8102e;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+    html {
+    font-family: Open Sans,sans-serif;
+}
+/* Conteneur principal du header */
+.header-isen {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
 
-    header h1 {
-      margin: 0;
-    }
+/* Organisation interne */
+.header-container {
+  max-width: 1400px; /* un peu plus large pour aérer */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header-logo img {
+  height: 45px; /* logo moins haut */
+  width: auto;
+}
+
+/* Navigation */
+.header-nav {
+  background: #e30613; /* Rouge ISEN */
+  flex: 1; /* occupe toute la largeur dispo */
+  margin-left: 40px; /* espace entre logo et barre rouge */
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* liens espacés sur toute la largeur */
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  flex: 1; /* chaque lien occupe une largeur égale */
+  text-align: center;
+}
+
+.header-nav a {
+  display: block;
+  padding: 14px 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
 
     nav ul {
       list-style: none;
@@ -108,16 +156,21 @@
 </head>
 <body>
   
-  <!-- HEADER_SIMPLE -->
-  <header>
-    <h1>Bienvenue à l'ISEN Ouest</h1>
-    <nav>
+  <header class="header-isen">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="/" class="header-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+    </a>
+
+    <!-- Navbar -->
+    <nav class="header-nav">
       <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="apprentissage.html">Apprentissage</a></li>
+        <li><a href="#">Liens à venir</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+</header>
 
   <main>
   <!-- PLUGGIN IMAGES -->
