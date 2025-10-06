@@ -1,1 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISEN Ouest</title>
+  <style>
+    /* ----- HEADER ----- */
+    html {
+    font-family: Open Sans,sans-serif;
+}
+/* Conteneur principal du header */
+.header-isen {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
 
+/* Organisation interne */
+.header-container {
+  max-width: 1400px; /* un peu plus large pour aérer */
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.header-logo img {
+  height: 45px; /* logo moins haut */
+  width: auto;
+}
+
+/* Navigation */
+.header-nav {
+  background: #e30613; /* Rouge ISEN */
+  flex: 1; /* occupe toute la largeur dispo */
+  margin-left: 40px; /* espace entre logo et barre rouge */
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around; /* liens espacés sur toute la largeur */
+  margin: 0;
+  padding: 0;
+}
+
+.header-nav li {
+  flex: 1; /* chaque lien occupe une largeur égale */
+  text-align: center;
+}
+
+.header-nav a {
+  display: block;
+  padding: 14px 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #fff;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .images-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+   .images-container img {
+     width: 200px;
+     height: auto;
+     border-radius: 10px;
+     transition: transform 0.3s;
+    }
+
+   .images-container img:hover {
+     transform: scale(1.05);
+    }
+  
+    .formations-block {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.block {
+  width: 250px; /* largeur réduite pour que ce ne soit pas trop grand */
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.block img {
+  width: 100%; /* l'image s'adapte à la largeur du bloc */
+  max-height: 180px; /* hauteur max pour éviter qu'elle soit trop grande */
+  object-fit: cover; /* pour ne pas déformer l'image */
+  border-radius: 10px;
+}
+
+.block h3 {
+  margin-top: 0;
+}
+
+.block a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #c8102e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+    /* ----- FOOTER ----- */
+    .site-footer {
+      background: #000;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 0 auto;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer-col-logo {
+      flex: 1;
+      min-width: 220px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-logo {
+      height: 100px;
+      margin-bottom: 15px;
+      margin-top: 30px;
+    }
+
+    .footer-links-section {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-cities {
+      font-size: 40px;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 15px;
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  
+  <header class="header-isen">
+  <div class="header-container">
+    <!-- Logo -->
+    <a href="/" class="header-logo">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-couleur.png" alt="ISEN Ouest">
+    </a>
+
+    <!-- Navbar -->
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#">Liens à venir</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main>
+  <!-- PLUGGIN IMAGES -->
+  <section class="formations-images">
+    <h2>Nos formations ingénieurs</h2>
+    <div class="images-container">
+      <a href="https://isen-ouest.fr/" target="_blank">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-cybersecurite.png" alt="Cybersécurité">
+      </a>
+      <a href="https://isen-ouest.fr/" target="_blank">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-developpement-logiciel.png" alt="Développement logiciel">
+      </a>
+         <a href="https://isen-ouest.fr/" target="_blank">
+          <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/21/vignette-dp-intelligence-artificielle.png" alt="Intelligence artificielle">
+        </a>
+      </div>
+    </section>
+  
+
+  <!-- PLUGGIN BLOCK -->
+  <section class="formations-block">
+  <div class="block postbac">
+    <h3>Post-bac</h3>
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Post-bac">
+    <p>Chaque étudiant construit son propre parcours de formation sur 5 ans. Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+    <a href="https://isen-ouest.fr/" target="_blank">Cycles post-bac</a>
+  </div>
+
+  <div class="block fisa">
+    <h3>FISA</h3>
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="FISA">
+    <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et les périodes au sein de l’entreprise d’accueil en montant progressivement en compétence. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
+    <a href="https://isen-ouest.fr/" target="_blank">Formation d'ingénieurs sous statut apprenti</a>
+  </div>
+</section>
+</main>
+
+  <!-- FOOTER_SIMPLE -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col-logo">
+        <img src="https://isen-ouest.fr/wp-content/uploads/2024/07/15/logo-isen-blanc.svg" 
+             alt="ISEN Ouest" class="footer-logo">
+      </div>
+      <div class="footer-links-section">
+        <p class="footer-cities">Texte à venir</p>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom">
+    &copy; ISEN Ouest - 2025
+  </div>
+
+</body>
+</html>
