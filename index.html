@@ -109,9 +109,10 @@
 }
 /* Deux colonnes */
 .block-columns {
-	display: flex;
-	gap: 40px;
-	align-items: normal;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .block-alternance {
@@ -121,6 +122,9 @@
 	overflow: hidden;
 	background: #fff;
 	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1 1 48%;
+  max-width: 48%;
+  margin: 0;
 }
 .block-alternance img {
 	width: 100%;
@@ -131,12 +135,13 @@
 	padding: 24px 30px;
 }
 .block-alternance-content h2 {
-	font-size: 200%;
+	font-size: 1.5em;
 	margin-top: 0;
 	margin-bottom: 16px;
+  
 }
 .block-alternance-content p {
-	font-size: 16px;
+	font-size: 0.95em;
 	line-height: 1.6;
 	color: #333;
 	margin-bottom: 16px;
@@ -246,29 +251,34 @@
   
 
   <!-- PLUGGIN BLOCK -->
-   <section class="block-alternance">
-    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Formations post-bac ISEN Ouest" />
-    <div class="block-alternance-content">
-      <h2>Formations post-bac</h2>
-      <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
-      <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
-      <div class="block-button">
-        <a href="https://isen-ouest.fr/cycles-post-bac">Cycles post-bac</a>
+<div class="block-container">
+  <div class="block-columns">
+    <section class="block-alternance">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Formations post-bac ISEN Ouest" />
+      <div class="block-alternance-content">
+        <h2>Formations post-bac</h2>
+        <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
+        <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+        <div class="block-button">
+          <a href="https://isen-ouest.fr/cycles-post-bac">Cycles post-bac</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="block-alternance">
-    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Formation Ingénieur par alternance ISEN Ouest" />
-    <div class="block-alternance-content">
-      <h2>Devenir ingénieur par alternance</h2>
-      <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et en entreprise pour monter progressivement en compétence.</p>
-      <p>Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
-      <div class="block-button">
-        <a href="https://isen-ouest.fr/formation-ingenieurs-apprenti">Formation d'ingénieurs sous statut apprenti</a>
+    <section class="block-alternance">
+      <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Formation Ingénieur par alternance ISEN Ouest" />
+      <div class="block-alternance-content">
+        <h2>Devenir ingénieur par alternance</h2>
+        <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et en entreprise pour monter progressivement en compétence.</p>
+        <p>Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
+        <div class="block-button">
+          <a href="https://isen-ouest.fr/formation-ingenieurs-apprenti">Formation d'ingénieurs sous statut apprenti</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
+ </div>
+
 </main>
 
   <!-- FOOTER_SIMPLE -->
