@@ -101,47 +101,62 @@
      transform: scale(1.05);
     }
   
-    .formations-block {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 40px 0;
+  /* BLOCKS */
+/* Conteneur global */
+.block-container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Deux colonnes */
+.block-columns {
+	display: flex;
+	gap: 40px;
+	align-items: normal;
 }
 
-.block {
-  width: 250px; /* largeur réduite pour que ce ne soit pas trop grand */
-  text-align: center;
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 10px;
-  transition: transform 0.3s, box-shadow 0.3s;
+.block-alternance {
+	margin: 40px auto;
+	border: 2px solid #c8102e;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fff;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-
-.block img {
-  width: 100%; /* l'image s'adapte à la largeur du bloc */
-  max-height: 180px; /* hauteur max pour éviter qu'elle soit trop grande */
-  object-fit: cover; /* pour ne pas déformer l'image */
-  border-radius: 10px;
+.block-alternance img {
+	width: 100%;
+	height: auto;
+	display: block;
 }
-
-.block h3 {
-  margin-top: 0;
+.block-alternance-content {
+	padding: 24px 30px;
 }
-
-.block a {
-  display: inline-block;
-  margin-top: 10px;
-  color: #c8102e;
-  text-decoration: none;
-  font-weight: bold;
+.block-alternance-content h2 {
+	font-size: 200%;
+	margin-top: 0;
+	margin-bottom: 16px;
 }
-
-.block:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.block-alternance-content p {
+	font-size: 16px;
+	line-height: 1.6;
+	color: #333;
+	margin-bottom: 16px;
 }
-
+.block-button {
+	margin: auto;
+	text-align: center;
+}
+.block-button a {
+	background-color: #e30613;
+	color: #fff;
+	display: inline-block;
+	padding: .5rem 2rem;
+	border-radius: 3.45rem;
+	font-weight: 700;
+	text-decoration: none;
+}
+.block-button a:hover {
+	text-decoration: underline;
+}
     /* ----- FOOTER ----- */
     .site-footer {
       background: #000;
@@ -231,21 +246,29 @@
   
 
   <!-- PLUGGIN BLOCK -->
-  <section class="formations-block">
-  <div class="block postbac">
-    <h3>Post-bac</h3>
-    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Post-bac">
-    <p>Chaque étudiant construit son propre parcours de formation sur 5 ans. Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
-    <a href="https://isen-ouest.fr/" target="_blank">Cycles post-bac</a>
-  </div>
+   <section class="block-alternance">
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-initiale-scaled.jpg" alt="Formations post-bac ISEN Ouest" />
+    <div class="block-alternance-content">
+      <h2>Formations post-bac</h2>
+      <p>Chaque étudiant construit son propre parcours de formation sur 5 ans.</p>
+      <p>Au cours des trois premières années post-bac, les étudiants choisissent leur cursus parmi 7 cycles de formation différents.</p>
+      <div class="block-button">
+        <a href="https://isen-ouest.fr/cycles-post-bac">Cycles post-bac</a>
+      </div>
+    </div>
+  </section>
 
-  <div class="block fisa">
-    <h3>FISA</h3>
-    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="FISA">
-    <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et les périodes au sein de l’entreprise d’accueil en montant progressivement en compétence. Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
-    <a href="https://isen-ouest.fr/" target="_blank">Formation d'ingénieurs sous statut apprenti</a>
-  </div>
-</section>
+  <section class="block-alternance">
+    <img src="https://isen-ouest.fr/wp-content/uploads/2024/10/18/formation-apprentissage-scaled.jpg" alt="Formation Ingénieur par alternance ISEN Ouest" />
+    <div class="block-alternance-content">
+      <h2>Devenir ingénieur par alternance</h2>
+      <p>Le cycle ingénieur en apprentissage permet d’alterner les périodes à l’école et en entreprise pour monter progressivement en compétence.</p>
+      <p>Cette formation favorise une immersion professionnelle rapide tout en étant rémunéré pendant toute la durée du contrat.</p>
+      <div class="block-button">
+        <a href="https://isen-ouest.fr/formation-ingenieurs-apprenti">Formation d'ingénieurs sous statut apprenti</a>
+      </div>
+    </div>
+  </section>
 </main>
 
   <!-- FOOTER_SIMPLE -->
